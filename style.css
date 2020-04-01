@@ -124,24 +124,25 @@ body {
 
 @media (max-width: 375px) {
     body {
-        position: relative;
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        padding: 20px;
-        height: auto;
+        margin: 0;
+        padding: 0;
     }
     .main_container {
-        display: flex;
-        justify-content: flex-start;
-        flex-direction: column;
-        width: auto;
+        position: relative;
+        width: 300px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         /* margin: 20px 10px; */
     }
+    .grid__item1 {
+        grid-column: auto;
+    }
     .grid__item2 {
-        border-radius: 0 0 0 0  ;
+        grid-column: auto;
+        border-radius: 0 0 0 0;
     }
     .grid__item3 {
+        grid-column: auto;
         border-radius: 0 0 12px 12px;
     }
 }
